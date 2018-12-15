@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="xuan">
+		<ul>
+			<li><a  id="card6">origin</a></li>
+			<li><a  id="card1">acient map</a></li>
+			<li><a  id="card2">change&rabbit</a></li>
+			<li><a  id="card4">apollo</a></li>
+			<li><a  id="card5">NASA</a></li>
+		</ul>
+	</div>
+	<div id="container">
+		<div id="card6"><h1>red</h1>
+		</div>
+				<div class="video card">
+		<video autoplay loop muted>
+			<source src="movie/videoplayback.mp4">
+		</video>
+		<div class="wenzi">
+			<div class="box">
+
+			</div>
+		</div>
+	</div>
+	<div class="video card1">
+		<div class="wenzi">
+			<div class="box">
+				<h1>Map of the Moon by Johannes Hevelius </h1>
+				<p>astronomers already had a deep understanding of the lunar cycle</p>
+			</div>
+		</div>
+	</div>
+	<div class="video card2">
+		<div class="wenzi">
+			<div class="box" >
+				<h1>Chang'e here is a very famous Chinese myth about this woman who is said to live on the moon.</h1>
+				<p>There are different variations of the myth but the basic story is that she and her husband were once immortal beings who were made mortal because of their bad behavior. They then attempted to achieve immortality again through the use of a pill but Chang'e got greedy and took too much of the pill and ended up floating up to the moon where she remained stuck over time. She is the subject of much Chinese poetry and is one of the central reasons for celebration each Autumn during the Chiense Moon Festival.</p>
+<h1>Moon Rabbit. This is an interesting myth because it crosses across several different cultures.</h1>
+				<p>The moon rabbit or jade rabbit is said to be one of the companions that Chang'e eventually was allowed to have with her one the moon. However, it is also a symbol that shows up in myths about the moon in Korea and in Japan.</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="video card4">
+		<div class="wenzi">
+			<div class="box">
+				<h1>astronaut Harrison Schmitt standing next to a boulder at Taurus-Littrow during the third EVA</h1>
+				<p>The Cold War-inspired "space race" and "Moon race" between the Soviet Union and the United States of America accelerated with a focus on the Moon. This included many scientifically important firsts, such as the first photographs of the then-unseen far side of the Moon in 1959 by the Soviet Union, and culminated with the landing of the first humans on the Moon in 1969, widely seen around the world as one of the pivotal events of the 20th century, and indeed of human history in general.</p>
+			</div>
+		</div>
+	</div>
+	<div class="video card5">
+		<div class="wenzi">
+			<div class="box">
+				<h1>The moon as photographed by NASA’s Lunar Reconnaissance Orbiter Camera.Credit NASA</h1>
+				<p>The Ballistic Missile Defense Organization and NASA launched the Clementine mission in 1994, and Lunar Prospector in 1998. NASA launched the Lunar Reconnaissance Orbiter, on June 18, 2009, which has collected imagery of the Moon's surface.</p>
+			</div>
+		</div>
+	</div>
+</body>
+	<script>
+		var btn=document.getElementById('card6');
+		var btn1=document.getElementById('card1');
+		var btn2=document.getElementById('card2');
+		var btn4=document.getElementById('card4');
+		var btn5=document.getElementById('card5');
+
+		var card1=document.getElementsByClassName('card1')[0];
+		var card2=document.getElementsByClassName('card2')[0];
+		var card4=document.getElementsByClassName('card4')[0];
+		var card5=document.getElementsByClassName('card5')[0];
+		var card=document.getElementsByClassName('card')[0];
+
+		btn.onclick=function(){
+			card1.style.display="none";
+			card2.style.display="none";
+			card4.style.display="none";
+			card5.style.display="none";
+			card.style.display="block";
+		}
+
+		btn1.onclick=function(){
+			card1.style.display="block";
+			card2.style.display="none";
+			card4.style.display="none";
+			card5.style.display="none";
+			card.style.display="none";
+		}
+		btn2.onclick=function(){
+			card2.style.display="block";
+			card1.style.display="none";
+			card4.style.display="none";
+			card5.style.display="none";
+				card.style.display="none";
+		}
+
+		btn4.onclick=function(){
+			card4.style.display="block";
+			card2.style.display="none";
+			card1.style.display="none";
+			card5.style.display="none";
+				card.style.display="none";
+		}
+		btn5.onclick=function(){
+			card5.style.display="block";
+			card2.style.display="none";
+
+			card4.style.display="none";
+			card1.style.display="none";
+				card.style.display="none";
+		}
+	</script>
+</html>
